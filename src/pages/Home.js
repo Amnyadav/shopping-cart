@@ -24,7 +24,7 @@ const Home = () => {
     fetchCards();
   }, []);
   return (
-    <div className="grid grid-cols-4 max-w-6xl mx-auto space-x-5 space-y-6 p-4  ">
+    <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 max-w-6xl mx-auto space-x-5 space-y-6 p-4  ">
       {loading ? (
         <Spinner></Spinner>
       ) : items.length === 0 ? (

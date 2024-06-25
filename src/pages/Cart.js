@@ -11,7 +11,7 @@ const Cart = () => {
     setTotalAmount(cart.reduce((total, curr) => total + curr.price, 0));
   }, [cart]);
   return (
-    <div className="flex w-[1200px] mx-auto justify-between gap-10  relative">
+    <div className="flex  flex-col lg:flex-row lg:w-[1200px] mx-auto justify-between gap-10  relative">
       {cart.length > 0 ? (
         
           <div className="w-full flex flex-col  mx-auto justify-center  p-2">
@@ -32,7 +32,7 @@ const Cart = () => {
           </NavLink>
         </div>
       )}
-      <div className="w-full mt-5  flex flex-col justify-between">
+      <div className="w-full mt-5  flex flex-col lg:justify-between">
         <div className="flex flex-col">
           <div className="font-semibold text-xl text-green-800 ">your cart</div>
           <div className="font-semibold text-5xl text-green-700  -mt-5">
