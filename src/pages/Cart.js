@@ -21,8 +21,8 @@ const Cart = () => {
           </div>
     
       ) : (
-        <div className="relative top-[50%] left-[50%] min-h-[80vh] flex flex-col items-center justify-center">
-          <div className="text-gray-700 font-semibold text-xl mb-2 abdolute  ">
+        <div className="flex flex-col mx-auto ">
+          <div className="text-gray-700 font-semibold text-xl mb-2   ">
             No item found
           </div>
           <NavLink to="/">
@@ -32,8 +32,8 @@ const Cart = () => {
           </NavLink>
         </div>
       )}
-      <div className="w-full mt-5  flex lg:flex-col max-[500px]:flex-col 
-         max-[500px]:items-center  justify-between  gap-3">
+      <div className={`${cart.length>0?"w-full mt-5 flex lg:flex-col max-[500px]:flex-col max-[500px]:items-center justify-between  gap-3":"mx-auto"}
+           `}>
         <div className="flex flex-col gap-3">
           <div className="font-semibold text-xl text-green-800 ">your cart</div>
           <div className="font-semibold text-5xl text-green-700  -mt-5">
