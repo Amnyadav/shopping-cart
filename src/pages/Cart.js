@@ -32,8 +32,9 @@ const Cart = () => {
           </NavLink>
         </div>
       )}
-      <div className="w-full mt-5  flex flex-col lg:justify-between">
-        <div className="flex flex-col">
+      <div className="w-full mt-5  flex lg:flex-col max-[500px]:flex-col 
+         max-[500px]:items-center  justify-between  gap-3">
+        <div className="flex flex-col gap-3">
           <div className="font-semibold text-xl text-green-800 ">your cart</div>
           <div className="font-semibold text-5xl text-green-700  -mt-5">
             summary
@@ -49,7 +50,7 @@ const Cart = () => {
               <p className="text-gray-700 font-semibold text-xl">
               total amount: ${totalAmount}
               </p>
-              <button className="bg-green-700 self-start hover:bg-purple-50 rounded-lg text-white transition duration-300 ease-linear mt-5 border-2 border-green-600 font-bold hover:text-green-700 p-3 text-xl">
+              <button className="bg-green-700 self-start  hover:bg-purple-50 rounded-lg text-white transition duration-300 ease-linear mt-5 border-2 border-green-600 font-bold hover:text-green-700 p-3 text-xl">
                 checkout Now
               </button>
             </>
